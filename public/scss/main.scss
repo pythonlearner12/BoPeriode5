@@ -1,0 +1,141 @@
+.main {
+    padding-top: 1rem;
+    background-color: #fcfcfc;
+
+    .hero {
+        position: relative;
+        padding: 0 3rem;
+
+        &__text {
+            position: absolute;
+            top: 35%;
+            left: 5%;
+
+            max-width: 37vw;
+            font-size: 2vw;
+
+            #heroDiscription {
+                padding: 2% 0;
+
+            }
+        }
+
+        #heroImg {
+            width: 100%;
+        }
+
+        #heroImgPhone {
+            display: none;
+            width: 100%;
+        }
+    }
+
+
+    &__events {
+        background-color: #fcfcfc;
+
+
+
+        padding: 3rem;
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+            gap: 2rem;
+
+            &__item {
+                max-width: 60rem;
+                padding: 2rem;
+                background-color: white;
+                // outline: solid black 0.1rem;
+                box-shadow: 0.5rem 0.5rem 2rem rgb(178, 178, 178);
+
+
+                &__img {
+                    width: 100%;
+                    object-fit: contain;
+                    padding-bottom: 2rem;
+                }
+
+            }
+        }
+    }
+
+
+    &__association {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        padding: 15rem 0;
+        gap: 2rem;
+
+
+
+
+
+
+        &__caption {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &__desc {
+            font-size: 1.3rem;
+            text-align: center;
+
+        }
+
+        &__emailconter {
+            display: flex;
+
+            &__email {
+                width: 40vw;
+                padding: 1rem;
+
+                font-size: 1.5rem;
+                border-radius: 1rem 0 0 1rem;
+
+            }
+
+            &__email::placeholder {
+                font-size: clamp(0.5rem, 4vw, 1.5rem);
+
+            }
+
+            &__button {
+                cursor: pointer;
+                border-radius: 0 1rem 1rem 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .main {
+        .hero {
+            #heroImg {
+                display: none;
+            }
+
+            #heroImgPhone {
+                display: block;
+            }
+
+            .hero__text {
+                top: 6%;
+                left: 10%;
+                max-width: 80vw;
+                font-size: 4vw;
+                text-align: center;
+            }
+        }
+    }
+
+}

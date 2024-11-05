@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Grid Layout</title>
+<!--
+    why do fractions of 0 get a spacing from "grid-gap" but px don't?
+-->
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(12, 0fr);/*remove fr and see it reacts different*/
+        gap: 60px;
+        background-color: #ff0000;
+
+    }
+
+    .item {
+        background-color: #ddd;
+        padding: 30px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+</body>
+</html>

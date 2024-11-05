@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+        }
+
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+            gap: 1rem;
+        }
+
+        .image{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img class="image" src="../img/hero_img.jpg" alt="">
+        <img class="image" src="../img/hero_img.jpg" alt="">
+        <img class="image" src="../img/hero_img.jpg" alt="">
+        <img class="image" src="../img/hero_img.jpg" alt="">
+    </div>
+</body>
+</html>

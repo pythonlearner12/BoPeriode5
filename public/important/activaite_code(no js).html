@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  /*https://stackoverflow.com/questions/13630229/can-i-have-an-onclick-effect-in-css*/
+  <body>
+    <style>
+      #btnControl {
+        display: none;
+      }
+
+      label{
+        cursor: pointer;
+      }
+
+      #btnControl:checked ~ label > img {
+        width: 70px;
+        height: 74px;
+      }
+    </style>
+
+    <input type="checkbox" id="btnControl" />
+    <label for="btnControl"><img src="../../img/logo.png"></label>
+    <label for="btnControl"><img src="../../img/logo.png"></label>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        #cont {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 150px);
+            /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+
+
+        }
+
+        .test {
+            padding: 2rem;
+            outline: solid rgb(180, 215, 239) 0.1px;
+            background-color: #000277;
+            color: WHITE;
+
+        }
+
+        #special {
+            grid-column: span 2;
+        }
+
+        .footer__img {
+            width: 20%;
+        }
+
+        #newsletter {
+            border-radius: 0.5rem;
+            width: 80%;
+            height: 2rem;
+        }
+
+        #newsletter_button {
+            border-radius: 0.3rem;
+            width: 5rem;
+            height: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer id="cont">
+        <div class="test">
+            <h3>Connect With Us</h3>
+            <img class="footer__img" src="../img/instagram.png" alt="">
+            <img class="footer__img" src="../img/tiktok.png" alt="">
+            <svg class="footer__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                </path>
+            </svg>
+            <img class="footer__img" src="../img/youtube.png" alt="">
+        </div>
+        <div id="special" class="test">
+            <h4>Enter your email address to receive our newsletter</h4>
+            <input id="newsletter">
+            <button id="newsletter_button">sign up</button>
+        </div>
+        <div class="test">
+            <h4>Address</h4>
+            <p>
+                your address goes here
+            </p>
+        </div>
+        <div class="test">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="test">Our Story</a></li>
+                <li><a href="test">Jobs</a></li>
+                <li><a href="test">Contact Us</a></li>
+                <li><a href="test">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="test">
+            <h4>Licensing</h4>
+            <ul>
+                <li><a href="test">T’s and C’s (visitor terms)</a></li>
+                <li><a href="test">Cookie statement</a></li>
+                <li><a href="test">Privacy policy</a></li>
+                <li><a href="test">Disclaimer</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

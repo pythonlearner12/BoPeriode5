@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        main {
+            height: 100vh;
+            background-color: rgb(220, 233, 190);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .main__cont{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .main__cont__caption{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        
+        .main__cont__desc{
+            font-size: 1.3rem;
+        }
+
+        .main__cont__emailcont{
+            display: flex;
+        }
+
+        .main__cont__emailcont__email {
+
+            width: 40vw;
+            height: 4rem;
+            font-size: 1.5rem;
+
+        }
+
+        .main__cont__emailcont__button {
+            width: 6rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="main__cont">
+
+            <h4 class="main__cont__caption">join our events</h4>
+
+            <p class="main__cont__desc">Delivers new about events every week to keep you up to speed</p>
+
+            <div class="main__cont__emailcont">
+                <input class="main__cont__emailcont__email" type="email" placeholder="Enter email here">
+                <button class="main__cont__emailcont__button" type="submit">subscribe</button>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

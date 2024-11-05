@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    padding: 5rem var(--globalSidePadding);
+    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    // color: white;
+    background-color: white;
+
+
+    
+}
+
+.footer__img {
+    width: clamp(0.5rem, 8vw, 5rem);
+}
+
+.footer__container {
+    flex: auto;
+}
+
+
+@media screen and (max-width: 750px) {
+    .footer {
+        flex-direction: column;
+        gap: 5rem;
+        font-size: 3rem;
+    }
+
+    .footer__img {
+        width: 8rem;
+    }
+}

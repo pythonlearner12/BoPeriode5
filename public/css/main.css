@@ -1,0 +1,94 @@
+.main {
+  padding-top: 1rem;
+  background-color: #fcfcfc;
+}
+.main .hero {
+  position: relative;
+  padding: 0 3rem;
+}
+.main .hero__text {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  max-width: 37vw;
+  font-size: 2vw;
+}
+.main .hero__text #heroDiscription {
+  padding: 2% 0;
+}
+.main .hero #heroImg {
+  width: 100%;
+}
+.main .hero #heroImgPhone {
+  display: none;
+  width: 100%;
+}
+.main__events {
+  background-color: #fcfcfc;
+  padding: 3rem;
+}
+.main__events__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+  gap: 2rem;
+}
+.main__events__list__item {
+  max-width: 60rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem 2rem rgb(178, 178, 178);
+}
+.main__events__list__item__img {
+  width: 100%;
+  object-fit: contain;
+  padding-bottom: 2rem;
+}
+.main__association {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 15rem 0;
+  gap: 2rem;
+}
+.main__association__caption {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.main__association__desc {
+  font-size: 1.3rem;
+  text-align: center;
+}
+.main__association__emailconter {
+  display: flex;
+}
+.main__association__emailconter__email {
+  width: 40vw;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+.main__association__emailconter__email::placeholder {
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
+}
+.main__association__emailconter__button {
+  cursor: pointer;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media screen and (max-width: 750px) {
+  .main .hero #heroImg {
+    display: none;
+  }
+  .main .hero #heroImgPhone {
+    display: block;
+  }
+  .main .hero .hero__text {
+    top: 6%;
+    left: 10%;
+    max-width: 80vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
